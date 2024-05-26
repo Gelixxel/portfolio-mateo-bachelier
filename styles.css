@@ -1,4 +1,3 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -98,7 +97,6 @@ footer p {
     margin: 0;
 }
 
-/* Add some spacing for the fixed header */
 body::before {
     content: '';
     display: block;

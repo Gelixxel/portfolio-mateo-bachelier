@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +8,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 header {
@@ -14,6 +19,11 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -22,26 +32,56 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f9;
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 5rem 1rem 3rem;
     text-align: center;
+    position: relative;
+}
+
+.section:nth-of-type(even) {
+    background-color: #f4f4f9;
+}
+
+.section:nth-of-type(odd) {
+    background-color: #fff;
 }
 
 .section .content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section .content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project {
-    margin: 1rem 0;
+    margin: 2rem 0;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 footer {
@@ -49,7 +89,24 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Add some spacing for the fixed header */
+body::before {
+    content: '';
+    display: block;
+    height: 80px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 8rem 1rem 6rem;
+    }
 }

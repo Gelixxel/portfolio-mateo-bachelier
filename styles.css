@@ -73,6 +73,10 @@ nav ul li a:hover {
     color: #f4f4f9;
 }
 
+nav ul li a:visited {
+    color: #fff;
+}
+
 .section {
     padding: 5rem 1rem 3rem;
     text-align: center;
@@ -81,7 +85,7 @@ nav ul li a:hover {
 
 #me {
     background: url('img/background-me.jpg') no-repeat center center/cover;
-    color: rgb(0, 0, 0);
+    color: #000B27
 }
 
 .limited-width {
@@ -105,6 +109,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .section .content:hover {
@@ -125,6 +130,42 @@ nav ul li a:hover {
 
 .project h3 {
     margin-bottom: 0.5rem;
+    color: #000B27;
+}
+
+.hobby {
+    margin: 2rem 0;
+}
+
+.hobby h3 {
+    margin-bottom: 0.5rem;
+    color: #000B27;
+}
+
+.contacts {
+    margin: 2rem 0;
+}
+
+.contacts h3 {
+    margin-bottom: 0.5rem;
+    color: #000B27;
+}
+
+.contacts a {
+    color: #000B27;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #c5c5c5;
+}
+
+.contacts a.no-underline:hover {
+    color: #c5c5c5;
+}
+
+.contacts a:visited {
     color: #000B27;
 }
 
@@ -152,10 +193,27 @@ footer a:hover {
     color: #ccc;
 }
 
+footer a:visited {
+    color: #fff;
+}
+
 body::before {
     content: '';
     display: block;
     height: 80px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+}
+
+.no-underline:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (min-width: 500px) {

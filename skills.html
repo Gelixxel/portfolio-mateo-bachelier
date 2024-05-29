@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéo Bachelier - Skills and Certifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logoMB2.png" type="image/png">
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'flex';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="no-underline">
+                <div class="logo-container">
+                    <img src="img/logoMB2.png" alt="MBachelier Logo" class="logo">
+                    <div class="title-container">
+                        <h1>Matéo Bachelier</h1>
+                        <p>Computer Science Student</p>
+                    </div>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="me.html">Me</a></li>
+                    <li><a href="projects.html">My Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li>•</li>
+                    <li><a href="docs/CV_mateo_bachelier_fr_en.pdf" target="_blank">My CV</a></li>
+                    <li>•</li>
+                    <li>Change language: <a href="fr/skills.html"><img src="img/fr_flag.png" alt="French Flag" class="flag-icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="skills" class="section">
+            <div class="content">
+                <h2>Skills and Certifications</h2>
+                <div class="skill-category">
+                    <h3 onclick="toggleDetails('programming-languages')">Programming Languages</h3>
+                    <div id="programming-languages" class="skills-grid" style="display:none;">
+                        <div class="skill-item">
+                            <img src="img/javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/python.png" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/java.png" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/cpp.png" alt="C++">
+                            <p>C++</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/ruby.png" alt="Ruby">
+                            <p>Ruby</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 onclick="toggleDetails('software-tools')">Software and Tools</h3>
+                    <div id="software-tools" class="skills-grid" style="display:none;">
+                        <div class="skill-item">
+                            <img src="img/vscode.png" alt="VS Code">
+                            <p>Visual Studio Code</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/git.png" alt="Git">
+                            <p>Git & GitHub</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/docker.png" alt="Docker">
+                            <p>Docker</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/figma.png" alt="Figma">
+                            <p>Figma</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/photoshop.png" alt="Photoshop">
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3 onclick="toggleDetails('certifications-list')">Certifications</h3>
+                    <div id="certifications-list" class="skills-grid" style="display:none;">
+                        <div class="skill-item">
+                            <img src="img/java_certification.png" alt="Java Certification">
+                            <p>Certified Java Developer</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/python_certification.png" alt="Python Certification">
+                            <p>Python for Data Science</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="img/aws_certification.png" alt="AWS Certification">
+                            <p>AWS Certified Solutions Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Matéo Bachelier. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -110,10 +110,26 @@ nav ul li a:visited {
     vertical-align: middle;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .section {
+    opacity: 0;
     padding: 5rem 1rem 3rem;
     text-align: center;
     position: relative;
+}
+
+.section.fade-in {
+    animation: fadeIn 2s forwards;
 }
 
 #me {

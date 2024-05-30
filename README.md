@@ -29,7 +29,7 @@ This portfolio is a personal project created to highlight my skills, projects, a
 
 ## Usage
 
-Explore the live site to learn more about Matéo Bachelier's skills and projects: [Portfolio of Matéo Bachelier](https://gelixxel.github.io/portfolio-mateo-bachelier/)
+Explore the live site to learn more about my skills and projects: [My Portfolio](https://gelixxel.github.io/portfolio-mateo-bachelier/)
 
 ## Contributing
 

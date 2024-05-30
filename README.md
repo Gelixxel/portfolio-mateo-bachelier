@@ -8,7 +8,6 @@ Welcome to the portfolio of Matéo Bachelier. This repository is website coded i
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 

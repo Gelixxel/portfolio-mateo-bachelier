@@ -9,13 +9,14 @@
     src: url('fonts/Moon.otf') format('truetype'); */
     font-family: 'Geomanist';
     src: url('fonts/Geomanist.ttf') format('truetype');
+    /* font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf') format('truetype'); */
 }
 
 body {
     /* font-family: 'Moon', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Geomanist', sans-serif; */
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Geomanist', sans-serif;
+    /* font-family: 'Helvetica', sans-serif; */
     line-height: 1.6;
     background-color: #ffffff;
     color: #000B27;
@@ -141,12 +142,12 @@ nav ul li a:visited {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 
-.section .content:hover {
+.clickable-content:hover {
+    cursor: pointer;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

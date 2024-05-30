@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logoMB2.png" type="image/png">
+    <<script src="scripts/toggleDetails.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,19 +34,154 @@
             </nav>
         </div>
     </header>
-    <section id="projects" class="section">
-        <div class="content">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Detailed description of project 1.</p>
+    <main>
+        <section id="skills" class="section">
+            <div class="content">
+                <h2>Skills and Certifications</h2>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div id="programming-languages" class="skills-grid">
+                        <div class="skill-item" id="details-javascript-item" onclick="toggleDetails('details-javascript')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="JavaScript">
+                                <h4>JavaScript</h4>
+                            </div>
+                            <div id="details-javascript" class="skill-details">
+                                <p>JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-python-item" onclick="toggleDetails('details-python')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div id="details-python" class="skill-details">
+                                <p>Python is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-c-item" onclick="toggleDetails('details-c')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="C">
+                                <p>C</p>
+                            </div>
+                            <div id="details-c" class="skill-details">
+                                <p>C is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-csharp-item" onclick="toggleDetails('details-csharp')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="C#">
+                                <p>C#</p>
+                            </div>
+                            <div id="details-csharp" class="skill-details">
+                                <p>C# is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-java-item" onclick="toggleDetails('details-java')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="Java">
+                                <p>Java</p>
+                            </div>
+                            <div id="details-java" class="skill-details">
+                                <p>Java is a class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-cpp-item" onclick="toggleDetails('details-cpp')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="C++">
+                                <p>C++</p>
+                            </div>
+                            <div id="details-cpp" class="skill-details">
+                                <p>C++ is an extension of C that includes object-oriented features, widely used for system/software development and game programming.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-ruby-item" onclick="toggleDetails('details-ruby')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="Ruby">
+                                <p>Ruby</p>
+                            </div>
+                            <div id="details-ruby" class="skill-details">
+                                <p>Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Detailed description of project 2.</p>
+        </section>
+        <section id="skills" class="section">
+            <div class="content">
+                <h2>Skills and Certifications</h2>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div id="programming-languages" class="skills-grid">
+                        <div class="skill-item" id="details-javascript-item" onclick="toggleDetails('details-javascript')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="JavaScript">
+                                <h4>JavaScript</h4>
+                            </div>
+                            <div id="details-javascript" class="skill-details">
+                                <p>JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.JavaScript is a versatile, multi-paradigm programming language used primarily for web development.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-python-item" onclick="toggleDetails('details-python')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div id="details-python" class="skill-details">
+                                <p>Python is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-c-item" onclick="toggleDetails('details-c')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="C">
+                                <p>C</p>
+                            </div>
+                            <div id="details-c" class="skill-details">
+                                <p>C is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-csharp-item" onclick="toggleDetails('details-csharp')">
+                            <div class="skill-content">
+                                <img src="img/logoMB2.png" alt="C#">
+                                <p>C#</p>
+                            </div>
+                            <div id="details-csharp" class="skill-details">
+                                <p>C# is a high-level, interpreted language known for its readability and versatility in various applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-java-item" onclick="toggleDetails('details-java')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="Java">
+                                <p>Java</p>
+                            </div>
+                            <div id="details-java" class="skill-details">
+                                <p>Java is a class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-cpp-item" onclick="toggleDetails('details-cpp')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="C++">
+                                <p>C++</p>
+                            </div>
+                            <div id="details-cpp" class="skill-details">
+                                <p>C++ is an extension of C that includes object-oriented features, widely used for system/software development and game programming.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item" id="details-ruby-item" onclick="toggleDetails('details-ruby')">
+                            <div class="skill-content">
+                                <img src="img/logoMB.png" alt="Ruby">
+                                <p>Ruby</p>
+                            </div>
+                            <div id="details-ruby" class="skill-details">
+                                <p>Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Matéo Bachelier. All rights reserved.</p>
     </footer>

@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@font-face {
+    /* font-family: 'Moon';
+    src: url('fonts/Moon.otf') format('truetype'); */
+    font-family: 'Geomanist';
+    src: url('fonts/Geomanist.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Moon', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Geomanist', sans-serif; */
+    font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #000B27;
